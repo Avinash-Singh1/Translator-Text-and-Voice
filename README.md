@@ -34,3 +34,16 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+### 1. **Google Translate**
+   - **Description**: The Google Translate Application is a powerful web tool that combines text translation and speech recognition, enabling users to translate text from various languages seamlessly. Built using **React**, **Next.js**, and **TypeScript**, this application integrates with the **Azure/OpenAI API** for translation services, utilizes **Clerk for authentication**, and stores translation history in **MongoDB** integrated with **Azure CosmosDB**. 
+   - **Key Features**:
+     - **User Authentication**: Users must authenticate via their Gmail accounts before accessing the translation page.
+     - **Automatic Language Detection**: The application automatically identifies the input language and prepares for translation.
+     - **Debounced Input**: Utilizes a debounce feature that waits for 5 seconds of inactivity before sending a translation request, optimizing API usage.
+     - **Translation History**: Users can view their translation history below the input text area, providing easy access to previously translated texts.
+     - **Speech Recognition**: The application includes speech recognition functionality, allowing users to input text by speaking.
+   - **Technologies Used**: React, Next.js, TypeScript, Tailwind CSS, Node.js, Azure/OpenAI API, Clerk, MongoDB, Azure CosmosDB.
+   - **GitHub Repository**: [Google Translate GitHub Repo](https://github.com/Avinash-Singh1/Translator-Text-and-Voice)
+   - **Live Demo**: [Live Demo of Google Translate Application](https://translator-text-and-voice.onrender.com/translate)
