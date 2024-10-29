@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from "next/server";
-
 import { AzureKeyCredential, OpenAIClient } from "@azure/openai";
 
 export async function POST(request: NextRequest) {
@@ -13,25 +12,23 @@ export async function POST(request: NextRequest) {
     process.env.AZURE_DEPLOYMENT_NAME === undefined 
   ) {
     console.error("Azure credentials not set");
-    return {
+    return NextResponse.json({
       sender: "",
       response: "Azure credentials not set",
-    };
+    });
   }
 
-  if (file.size === 0) {
-    return {
+  if (!file || file.size === 0) {
+    return NextResponse.json({
       sender: "",
       response: "No audio file provided",
-    };
+    });
   }
 
   console.log(">>", file);
 
   const arrayBuffer = await file.arrayBuffer();
   const audio = new Uint8Array(arrayBuffer);
-
-  // ---   get audio transcription from Azure Whisper AI service ----
 
   console.log("== Transcribe Audio Sample ==");
 
