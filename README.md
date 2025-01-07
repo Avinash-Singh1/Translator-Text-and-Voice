@@ -46,4 +46,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
      - **Speech Recognition**: The application includes speech recognition functionality, allowing users to input text by speaking.
    - **Technologies Used**: React, Next.js, TypeScript, Tailwind CSS, Node.js, Azure/OpenAI API, Clerk, MongoDB, Azure CosmosDB.
    - **GitHub Repository**: [Google Translate GitHub Repo](https://github.com/Avinash-Singh1/Translator-Text-and-Voice)
-   - **Live Demo**: [Live Demo of Google Translate Application](https://translator-text-and-voice.onrender.com/translate)
+   - **Live Demo**: [Live Demo of Google Translate Application](https://translator-text-and-voice.onrender.com)
